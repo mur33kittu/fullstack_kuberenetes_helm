@@ -1,0 +1,8 @@
+image:
+  repository: mur33kittu/back-end
+  tag: latest
+service:
+  type: NodePort
+  exposePort: 30000 // expose to node 
+  targetPort: 8080 // App server listening on this port
+  internalPort: 3000 // Internal exposed within the pod
